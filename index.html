@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left-nav">
+                <a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML5">HTML5</a>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">JavaScript</a>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a>
+            </div>
+            <div class="right-nav">
+                <button data-bs-theme-value="dark" onclick="setDarkMode()">Dark</button>
+                <button data-bs-theme-value="light" onclick="setLightMode()">Light</button>
+                <button>Contact Me</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="grid-container">
+            <div class="left-column">
+                <p>Enter a number to calculate its factorial:</p>
+            </div>
+            <div class="right-column">
+                <input type="number" id="factorialInput" placeholder="Enter a number">
+            </div>
+        </div>
+
+        <div class="grid-container">
+            <div class="left-column">
+                <button id="calculateButton" onclick="calculateFactorial()">Enter</button>
+            </div>
+            <div class="right-column result">
+                <p id="resultDisplay">Result will be displayed here</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2025 Your Name</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
